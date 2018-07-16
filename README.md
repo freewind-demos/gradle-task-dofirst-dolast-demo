@@ -9,6 +9,14 @@ Run tests:
 ./gradlew test
 ```
 
+Update Gradle Version
+---------------------
+
+```
+gradle wrapper --gradle-version 4.8.1
+./gradlew -version
+```
+
 Setup in IDEA
 --------------
 

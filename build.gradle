@@ -12,9 +12,3 @@ dependencies {
     testCompile 'junit:junit:4.11'
     testCompile 'org.easytesting:fest-assert-core:2.0M10'
 }
-
-// used to generate `./gradlew`
-// by run `gradle wrapper`
-task wrapper(type: Wrapper) {
-    gradleVersion = '4.9' //version required
-}
