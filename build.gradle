@@ -1,14 +1,9 @@
-apply plugin: 'java'
-
-repositories {
-    mavenLocal()
-    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
-    maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
-    jcenter()
-}
-
-dependencies {
-    compile 'org.apache.commons:commons-lang3:3.4'
-    testCompile 'junit:junit:4.11'
-    testCompile 'org.easytesting:fest-assert-core:2.0M10'
+task hello(type: Copy) {
+    doFirst {
+        println("------------ doFirst ------------")
+    }
+    println("----------- hello -----------")
+    doLast {
+        println("------------ doLast ------------")
+    }
 }
