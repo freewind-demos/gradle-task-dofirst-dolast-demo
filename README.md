@@ -1,30 +1,29 @@
-Gradle Hello World Demo
-=======================
+Gradle Task DoFirst DoLast Demo
+===============================
 
-A very simple java project with gradle.
-
-Run tests:
+The code in task but not in `doFirst/doLast` are configuration code, they will be run when parsing the `build.gradle` script.
 
 ```
-./gradlew test
+./gradlew tasks
 ```
 
-Update Gradle Version
----------------------
+will show:
 
 ```
-gradle wrapper --gradle-version 4.8.1
-./gradlew -version
+> Configure project :
+----------- hello in configuration -----------
 ```
 
-Setup in IDEA
---------------
-
-Use command line:
+Run task:
 
 ```
-idea .
+./gradlew hello
 ```
 
-Or import the project directly with IDEA.
+will show:
 
+```
+> Task :hello
+------------ doFirst ------------
+------------ doLast ------------
+```

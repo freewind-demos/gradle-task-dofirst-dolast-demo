@@ -1,9 +1,9 @@
-task hello(type: Copy) {
-    doFirst {
-        println("------------ doFirst ------------")
-    }
-    println("----------- hello -----------")
+task hello() {
     doLast {
         println("------------ doLast ------------")
     }
+    doFirst {
+        println("------------ doFirst ------------")
+    }
+    println("----------- hello in configuration -----------")
 }
